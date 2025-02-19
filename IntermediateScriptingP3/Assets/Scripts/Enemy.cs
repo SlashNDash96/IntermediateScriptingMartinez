@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
-public class Enemy : MonoBehaviour
+public class Enemy
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //Static variables are shared across all instances
+    //of a class.
+    public static int enemyCount = 0;
 
-    // Update is called once per frame
-    void Update()
+    public Enemy()
     {
-        
+        //Increment the static variable to know how many
+        //objects of this class have been created.
+        enemyCount++;
     }
 }

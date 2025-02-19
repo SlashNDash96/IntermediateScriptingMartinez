@@ -11,7 +11,7 @@ public class Game1 : MonoBehaviour
         Enemy enemy2 = new Enemy();
         Enemy enemy3 = new Enemy();
 
-        int x = Enemy1.enemyCount;
+        int x = Enemy.enemyCount;
     }
 
     // Update is called once per frame
